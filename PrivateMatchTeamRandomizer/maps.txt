@@ -1,0 +1,24 @@
+-ACTIVE DUTY GROUP-
+Cache
+Cobblestone
+Inferno
+Mirage
+Nuke
+Overpass
+Train
+-RESERVE DUTY GROUP-
+Dust II
+Aztec
+Canals
+Dust
+Vertigo
+-OPERATION GROUP-
+Agency
+Austria
+Black Gold
+Insertion
+Lite
+Shipped
+Thrill
+-WORKSHOP MAPS-
+----------------------------------------- NOTHING BELOW THIS LINE -----------------------------------------
