@@ -1,0 +1,26 @@
+﻿<Page x:Class="PrivateMatchTeamRandomizer.PlayerSelection"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PrivateMatchTeamRandomizer" 
+      mc:Ignorable="d" 
+      d:DesignHeight="471.307" d:DesignWidth="807.386"
+      Title="PlayerSelection">
+
+    <Grid FocusManager.FocusedElement="{Binding ElementName=newPlayerName}">
+        <Grid.Background>
+            <ImageBrush ImageSource="images/background.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <ListBox x:Name="storedPlayers" HorizontalAlignment="Left" Height="258" Margin="50,66,0,0" VerticalAlignment="Top" Width="190" SelectionMode="Multiple" SelectionChanged="storedPlayersSelectionChange"/>
+        <Button x:Name="doneBtn" Content="Randomize Teams!" IsEnabled="False" HorizontalAlignment="Left" Margin="297,287,0,0" VerticalAlignment="Top" Width="159" Height="111" Click="doneBtn_Click"/>
+        <TextBox x:Name="newPlayerName" HorizontalAlignment="Left" Height="21" Margin="50,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" KeyUp="NameInputOnKeyUp"/>
+        <ListBox x:Name="activePlayers" HorizontalAlignment="Left" Height="292" Margin="505,66,0,0" VerticalAlignment="Top" Width="229" SelectionMode="Multiple" SelectionChanged="activePlayersOnSelectionChange" />
+        <Label x:Name="storedPlayersLbl" Content="STORED PLAYERS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" Width="190" Height="48" Foreground="White" FontSize="22"/>
+        <Label x:Name="activePlayersLbl" Content="ACTIVE PLAYERS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="505,10,0,0" VerticalAlignment="Top" Width="229" Height="48" Foreground="White" FontSize="24"/>
+        <Button x:Name="addNewPlayerBtn" Content="Add Player" IsEnabled="False"  HorizontalAlignment="Left" Margin="50,368,0,0" VerticalAlignment="Top" Width="190" Height="30" Click="addPlayerBtnClick"/>
+        <Image x:Name="csgoLogo" Source="images/csgo.png" HorizontalAlignment="Left" Height="160" Margin="269,66,0,0" VerticalAlignment="Top" Width="214"/>
+        <Button x:Name="removeActivePlayersBtn" Content="Remove Player(s)" IsEnabled="False"  HorizontalAlignment="Left" Margin="505,368,0,0" VerticalAlignment="Top" Width="229" Height="30" Click="removeActivePlayersBtnClick"/>
+        <Button x:Name="moveStoredPlayersBtn" Content="---- Move Players ---->" IsEnabled="False" HorizontalAlignment="Left" Margin="304,191,0,0" VerticalAlignment="Top" Width="144" Height="76" Click="movePlayersBtnClick"/>
+    </Grid>
+</Page>

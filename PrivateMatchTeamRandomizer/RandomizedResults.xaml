@@ -1,0 +1,29 @@
+﻿<Page x:Class="PrivateMatchTeamRandomizer.RandomizedResults"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PrivateMatchTeamRandomizer"
+      mc:Ignorable="d" 
+      d:DesignHeight="471.307" d:DesignWidth="807.386"
+      Title="RandomizedResults">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/background.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Label x:Name="teamOneName" Content="" HorizontalContentAlignment="Center" Foreground="White" FontSize="20" Margin="10,159,491,182"/>
+        <Label x:Name="teamTwoName" Content="" HorizontalContentAlignment="Center" Margin="444,159,10,182" Foreground="White" FontSize="20"/>
+        <Label x:Name="mapLbl" HorizontalContentAlignment="Center" Content="" Margin="230,20,248,252" Foreground="White" FontSize="36"/>
+        <Button x:Name="RandomizeAgainBtn" Content="Randomize Again" HorizontalAlignment="Left" Margin="304,198,0,0" VerticalAlignment="Top" Width="184" Height="110" Click="randomizeAgainBtn_Click"/>
+        <Button x:Name="changePlayers" Content="Change Players" HorizontalAlignment="Left" Margin="304,324,0,0" VerticalAlignment="Top" Width="184" Height="44" Click="changePlayers_Click" />
+        <ListBox x:Name="teamOne" HorizontalAlignment="Left" Height="200" Margin="50,198,0,0" VerticalAlignment="Top" Width="229"/>
+        <ListBox x:Name="teamTwo" HorizontalAlignment="Left" Height="200" Margin="505,198,0,0" VerticalAlignment="Top" Width="229"/>
+        <Image x:Name="tLogo" Source="images/t.png" HorizontalAlignment="Left" Height="100" Margin="112,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="ctLogo" Source="images/ct.png" HorizontalAlignment="Left" Height="100" Margin="571,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <CheckBox x:Name="activeDutyCheckbox" Content="Active Duty" IsChecked="True" HorizontalAlignment="Left" Margin="303,124,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="reserveDutyCheckbox" Content="Reserve Duty" IsChecked="False" HorizontalAlignment="Left" Margin="303,159,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="operationCheckbox" Content="Operation" IsChecked="False" HorizontalAlignment="Left" Margin="414,124,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.219,0.933"/>
+        <CheckBox x:Name="workshopCheckbox" Content="Workshop" IsChecked="False" HorizontalAlignment="Left" Margin="414,159,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.219,0.933"/>
+    </Grid>
+</Page>
